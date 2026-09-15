@@ -3,22 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NEON // GREEN</title>
+<title>NEON // PURPLE</title>
 <style>
-*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Arial,sans-serif;background:#020b06;color:#d8ffe8}body{overflow:hidden}.grid{position:fixed;inset:0;background:linear-gradient(rgba(0,255,100,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(0,255,100,.07) 1px,transparent 1px);background-size:45px 45px;transform:perspective(500px) rotateX(55deg) scale(1.6);transform-origin:center bottom;opacity:.6}.glow{position:fixed;width:420px;height:420px;border-radius:50%;background:#00ff66;filter:blur(130px);opacity:.12;top:15%;left:50%;transform:translateX(-50%)}main{position:relative;z-index:2;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:30px}.tag{font-size:13px;letter-spacing:5px;color:#55ff99;margin-bottom:20px}.title{font-size:clamp(60px,13vw,150px);line-height:.85;margin:0;font-weight:900;letter-spacing:-7px;color:#eafff2;text-shadow:0 0 8px #00ff66,0 0 25px #00ff66,0 0 65px rgba(0,255,102,.8)}.sub{margin:30px 0;color:#91c9a8;letter-spacing:3px;font-size:14px}.button{border:1px solid #00ff66;background:rgba(0,255,102,.06);color:#7dffae;padding:14px 28px;border-radius:4px;letter-spacing:3px;font-weight:bold;cursor:pointer;box-shadow:0 0 15px rgba(0,255,102,.35);transition:.2s}.button:hover{background:#00ff66;color:#001b0b;box-shadow:0 0 35px #00ff66}.status{position:fixed;bottom:25px;left:25px;font-size:11px;letter-spacing:2px;color:#438d60}.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#00ff66;box-shadow:0 0 10px #00ff66;margin-right:8px}.scan{position:fixed;z-index:3;left:0;right:0;height:2px;background:#00ff66;box-shadow:0 0 15px #00ff66;opacity:.35;animation:scan 5s linear infinite}@keyframes scan{from{top:-5px}to{top:100%}}@media(max-width:600px){.title{letter-spacing:-3px}.sub{font-size:11px}}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Arial,sans-serif;background:#09020f;color:#f5eaff}body{overflow:hidden}.grid{position:fixed;inset:0;background:linear-gradient(rgba(180,0,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(180,0,255,.08) 1px,transparent 1px);background-size:45px 45px;transform:perspective(500px) rotateX(55deg) scale(1.6);transform-origin:center bottom;opacity:.65}.glow{position:fixed;width:420px;height:420px;border-radius:50%;background:#b000ff;filter:blur(130px);opacity:.18;top:15%;left:50%;transform:translateX(-50%)}main{position:relative;z-index:2;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:30px}.tag{font-size:13px;letter-spacing:5px;color:#d966ff;margin-bottom:20px}.title{font-size:clamp(60px,13vw,150px);line-height:.85;margin:0;font-weight:900;letter-spacing:-7px;color:#fff3ff;text-shadow:0 0 8px #c000ff,0 0 25px #b000ff,0 0 65px rgba(176,0,255,.9)}.sub{margin:30px 0;color:#c9a0d8;letter-spacing:3px;font-size:14px}.button{border:1px solid #c000ff;background:rgba(192,0,255,.08);color:#e58cff;padding:14px 28px;border-radius:4px;letter-spacing:3px;font-weight:bold;cursor:pointer;box-shadow:0 0 15px rgba(192,0,255,.45);transition:.2s}.button:hover{background:#c000ff;color:#180020;box-shadow:0 0 35px #c000ff}.status{position:fixed;bottom:25px;left:25px;font-size:11px;letter-spacing:2px;color:#8c4ba3}.dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#c000ff;box-shadow:0 0 10px #c000ff;margin-right:8px}.scan{position:fixed;z-index:3;left:0;right:0;height:2px;background:#c000ff;box-shadow:0 0 15px #c000ff;opacity:.4;animation:scan 5s linear infinite}@keyframes scan{from{top:-5px}to{top:100%}}@media(max-width:600px){.title{letter-spacing:-3px}.sub{font-size:11px}}
 </style>
 </head>
 <body>
 <div class="grid"></div><div class="glow"></div><div class="scan"></div>
 <main>
 <div class="tag">SYSTEM ONLINE // 2026</div>
-<h1 class="title" id="title">NEON<br>GREEN</h1>
+<h1 class="title" id="title">NEON<br>PURPLE</h1>
 <div class="sub">WELCOME TO THE FUTURE</div>
 <button class="button" onclick="changeVibe()">CHANGE VIBE</button>
 </main>
 <div class="status"><span class="dot"></span>ALL SYSTEMS NOMINAL</div>
 <script>
-const vibes=['NEON<br>GREEN','CYBER<br>MODE','MATRIX<br>VIBE','NIGHT<br>GLOW','FUTURE<br>ONLINE'];let i=0;
+const vibes=['NEON<br>PURPLE','CYBER<br>MODE','VIOLET<br>VIBE','NIGHT<br>GLOW','FUTURE<br>ONLINE'];let i=0;
 function changeVibe(){i=(i+1)%vibes.length;document.getElementById('title').innerHTML=vibes[i];document.body.animate([{filter:'brightness(1)'},{filter:'brightness(1.5)'},{filter:'brightness(1)'}],{duration:400});}
 </script>
 </body>
